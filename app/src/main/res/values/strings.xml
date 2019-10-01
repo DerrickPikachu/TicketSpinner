@@ -9,4 +9,9 @@
         <item>台南影城</item>
         <item>高雄影城</item>
     </string-array>
+    <string-array name="time">
+        <item>早場</item>
+        <item>午場</item>
+        <item>晚場</item>
+    </string-array>
 </resources>

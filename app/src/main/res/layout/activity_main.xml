@@ -10,7 +10,7 @@
         android:id="@+id/cinemasSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="150dp"
         android:entries="@array/cinemas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,9 +23,9 @@
         android:layout_marginTop="30dp"
         android:text="@string/booking"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/cinemasSpinner"
-        app:layout_constraintStart_toStartOf="@+id/cinemasSpinner"
-        app:layout_constraintTop_toBottomOf="@+id/cinemasSpinner" />
+        app:layout_constraintEnd_toEndOf="@+id/timeSpinner"
+        app:layout_constraintStart_toStartOf="@+id/timeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/timeSpinner" />
 
     <TextView
         android:id="@+id/resultText"
@@ -37,4 +37,14 @@
         app:layout_constraintEnd_toEndOf="@+id/bookBtn"
         app:layout_constraintStart_toStartOf="@+id/bookBtn"
         app:layout_constraintTop_toBottomOf="@+id/bookBtn" />
+
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:entries="@array/time"
+        app:layout_constraintEnd_toEndOf="@+id/cinemasSpinner"
+        app:layout_constraintStart_toStartOf="@+id/cinemasSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/cinemasSpinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>

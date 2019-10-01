@@ -15,11 +15,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             String[] cinemasName = getResources().getStringArray(R.array.cinemas);
-           result.setText("訂" + cinemasName[cinemas.getSelectedItemPosition()] + "的票");
+            String[] timeStr = getResources().getStringArray(R.array.time);
+            result.setText("訂" + cinemasName[cinemas.getSelectedItemPosition()] + timeStr[timeSpinner.getSelectedItemPosition()] +"的票");
         }
     }
 
-    Spinner cinemas;
+    Spinner cinemas, timeSpinner;
     TextView result;
     Button bookBtn;
     MainActivityListener listener;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.resultText);
         bookBtn = findViewById(R.id.bookBtn);
         listener = new MainActivityListener();
+        timeSpinner = findViewById(R.id.timeSpinner);
 
         bookBtn.setOnClickListener(listener);
     }
